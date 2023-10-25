@@ -46,8 +46,10 @@ a {
 }
 .container {
     width: 600px;
-    margin: 30px auto 0 auto;
+    margin: 100px auto 0 auto;
     scroll-behavior: smooth;
+
+
 }
 .atsaay_background {
     margin-top: 50px;
