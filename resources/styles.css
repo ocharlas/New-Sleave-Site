@@ -15,9 +15,14 @@ html {
     box-sizing: border-box;
     }
 
-/*body {
-    background-color: rgb(220,230,255);
-}*/
+body {
+ /*   background-color: rgb(220,230,255);*/
+ background: url('stars3.jpeg');
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+
+}
 
 .nav {
     display: block;
@@ -47,7 +52,7 @@ a {
 .atsaay_background {
     margin-top: 50px;
     background-color: black!important;
-    height: 900px;
+    height: 830px;
     padding-top: 5%;
     border-radius: 30px;
 }
@@ -163,7 +168,7 @@ letter-spacing: 1.3px;
 }
 
 .grid {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr;
     margin-left: -120px; 
     position: relative;
@@ -213,7 +218,7 @@ footer  {
 
 i.fa-brands {
     font-size: 2rem;
-    color: black;
+    color: #f9f9f9;
     opacity: .9;
     margin: 0 4px;
     padding: 5px;
@@ -244,12 +249,16 @@ i.fa-brands {
     margin: -90px 0 0 6px;
     width: 196px;
     border-radius: 4px;
+    filter: invert(1);
 }
 img.cartel:hover {
-    filter: invert(1);
+    filter: invert(0);
 }
 
 @media (max-width:600px) {
+    body {
+        background: none;
+    }
     .container {
     width: 100vw;
     display: flex;
@@ -307,5 +316,7 @@ footer  {
 }
 i.fa-brands {
     font-size: 3rem;
+    color: black !important;
+    top: 50px, impo !important;;
 }
 }
