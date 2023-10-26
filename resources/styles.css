@@ -63,7 +63,7 @@ h1.news1 {
     text-align: center;
     transform: scalex(.93);
     color: rgb(228, 228, 228);
-    margin: -20px auto 20px auto;    
+    margin: -30px auto 20px auto;    
 }
 span.news1 {
     margin-top: 10px!important;
@@ -80,8 +80,8 @@ h3.labels {
     font-size: 24px;
     letter-spacing: -1px;
     text-align: center;
-    margin-top: -10px;
     margin: 12px auto;
+    margin-top: -330px;
     color: white!important;
 }
 .engineerrecords,
@@ -154,8 +154,89 @@ max-width: 100%;
     margin: 0 auto!important;
     max-width: 600px;
 }
-.atsaay_hero img:hover {
+
+#linktree {
+    flex-direction: column;
+    
+    margin: 0 auto;
+    margin-top: -530px;
+    padding: 20px auto;
+    border-radius: 12px!important;
+    display: flex;
+    margin-bottom: 530px;
+    opacity: 0;
+    transition: opacity .2s linear;
+    }
+
+#linktree:hover
+{
+    display: flex;
+    opacity: 1;
+    
+}
+button {
+    padding: 10px 20px;
+    margin: 5px auto;
+    width: 300px;
+    border-radius: 25px;
+    background-color: #333;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    border-style: none;
+    border: 2px solid #333;
+}
+button:active {
     opacity: .8;
+}
+.spotify_btn {
+    color: #1ED760;
+}
+.spotify_btn:hover {
+    background-color: #1ED760;
+    color: black!important;
+    border: 2px solid black;
+}
+.apple_btn {
+    color: #d5d5d5
+}
+.apple_btn:hover {
+    background-color: #d5d5d5;
+    color: black!important;
+    border: 2px solid black;
+}
+.amazon_btn {
+    color: #0091ea;
+    margin-top: -10px;
+}
+.amazon_btn:hover {
+    background-color: #0091ea;
+    color: black!important;
+    border: 2px solid black;
+}
+.bandcamp_btn {
+    color:#1FA0AE;
+}
+.bandcamp_btn:hover {
+    background-color: #1FA0AE;
+    color: #000!important;
+    border: 2px solid black;
+}
+.youtube_btn {
+    color: #b2071d;
+}
+.youtube_btn:hover {
+    background-color: #c0001a;
+    color: black!important;
+    border: 2px solid black;
+}
+.deezer_btn {
+    color: #f5f5f5
+}
+.deezer_btn:hover {
+    background:linear-gradient(45deg, #ff0000, #ffed00, #ff0092, #c2ff00, #00c7f2, #c1f1fc);
+    color: black!important;
+    border: 2px solid black;
+
 }
 .engineerrecords {
 letter-spacing: 1.3px;
@@ -340,4 +421,9 @@ i.fa-brands {
     z-index:-1;
     filter: invert(0);
 }
+}
+@media (max-width:390px) {
+    .labels {
+        display: none;
+    }
 }
