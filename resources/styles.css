@@ -62,11 +62,19 @@ h1.news1 {
     font-family:Arial, Helvetica, sans-serif/*'Grotesk', Helvetica, sans-serif*/;
     text-align: center;
     transform: scalex(.93);
-    color: rgba(228, 228, 228, .8);
+    color: rgba(228, 228, 228, .9);
     margin: -30px auto 20px auto;    
 }
 span.news1 {
     margin-top: 10px!important;
+}
+.title {
+    color: rgba(228, 228, 228, .9);
+    text-align: center;
+    width: 100%;
+    font-size: 1.65em;
+    margin-top: -1px;
+    margin-bottom: 20px;
 }
 .atsaay {
     font-size: 36px;
