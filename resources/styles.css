@@ -177,6 +177,9 @@ max-width: 100%;
 .linktree a {
     color: #dedede;
 }
+a.linktree:hover {
+    color: black!important;
+}
 button {
     padding: 10px 20px;
     margin: 5px auto;
@@ -200,26 +203,23 @@ button:active {
     border: 2px solid black;
 }
 .apple_btn {
-    color: #d5d5d5
+    color: #d5d5d5;
 }
 .apple_btn:hover {
-    background-color: #d5d5d5;
+    background-color: #a0a0a0;
     color: black!important;
     border: 2px solid black;
 }
 .amazon_btn {
     color: #0091ea;
-    margin-top: -10px;
+    
 }
 .amazon_btn:hover {
     background-color: #0091ea;
     color: black!important;
     border: 2px solid black;
 }
-.bandcamp_btn,
-a.linktree.bandcamp_btn {
-    color:#1FA0AE;
-}
+
 .bandcamp_btn:hover {
     background-color: #1FA0AE;
     color: #000!important;
@@ -234,7 +234,9 @@ a.linktree.bandcamp_btn {
     border: 2px solid black;
 }
 .deezer_btn {
-    color: #f5f5f5
+    color: #f5f5f5;
+    margin-top: -14px;
+    
 }
 .deezer_btn:hover {
     background:linear-gradient(45deg, #ff0000, #ffed00, #ff0092, #c2ff00, #00c7f2, #c1f1fc);
