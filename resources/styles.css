@@ -84,6 +84,9 @@ h1.news1 {
     margin-top: -335px;
     margin-left: 170px;
 }
+.new-subtitle__mobile {
+    display: none;
+}
 .sth_store {
     color: rgba(40, 40, 40, .9);
     font-size: 2.5rem;
@@ -370,13 +373,61 @@ img.cartel:hover {
         background: #121212;
     }
     .container {
-    margin-top: 45px;
+    margin-top: -345px;
     width: 100vw;
     display: flex;
     flex-direction: column;
+    background-color: black;
+    }
+    #records {
+        background-color: black;
+    }
+    .bardown_flyer {
+        max-width: 100vw;
     }
     .atsaay_background {
-        height: 620px;
+        height: 520px;
+        background-color: black;
+    }
+    .lp2_background {
+        margin-top: 50px;
+        background-color: black;
+        height: 450px;
+    }
+    .fest_flyer {
+        margin: 0 auto 20px auto;
+        max-width: 100vw;
+        background-color: black;
+    }
+    h1.news1 {
+        display: none;
+    }
+    .news-subtitle,
+    .sth_store {
+        display: none;
+    }
+    #sth_store_mobile {
+        position: fixed!important;
+        display: flex;
+        bottom: 10px;
+        padding: 20px;
+        font-size: 1.5rem;
+        background: url(vinylbg.jpeg);
+        background-size: 300px;
+        text-transform: lowercase;
+        text-decoration: none;
+        border-radius: 70% 35%;
+        z-index: 111111;
+        font-family: Helvetica, Arial, sans-serif;
+        border: 4px solid #333;
+        box-shadow: 3px 2px 15px;
+        }
+    #sth_store_mobile a {
+        color: #ccc;
+    }
+    .cleanvid {
+        width: 100vw;
+     
     }
     .nav {
         display: none!important;
@@ -409,26 +460,6 @@ img.cartel:hover {
         margin: 0 auto;
     
     }
-    .grid {
-        grid-template-columns: 1fr;
-        margin: 0 auto;
-        width: 100vw;
-        background-color: black;
-    }
-    .box {
-        margin: 0 auto;
-    }
-    
-    .box2,
-    .box3,
-    .box4 {
-        display: none;
-    }
-
-    .cover {
-        border: 4px solid black;
-    }
-
 footer  {
     position: fixed;
     top: 35px;
