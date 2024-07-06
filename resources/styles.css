@@ -18,6 +18,8 @@ html {
 body {
  /*   background-color: rgb(220,230,255);*/
  background: url('stars3.jpeg');
+ background-color: rgba(255,255,255,0.05);
+ background-blend-mode: lighten;
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-size: cover;
@@ -25,9 +27,11 @@ body {
 }
 
 .nav {
-    display: block;
+    display: inline;
     position: fixed;
-    margin-top: 20px;
+    background-color: rgba(255,255,255,.1);
+    padding: 10px;
+    border-radius: 4px;
 }
 
 a {
@@ -37,7 +41,8 @@ a {
 .nav a {
     font-size: 1.25rem;
     font-family: 'Neue Montral',arial;
-}
+    color: #e2e2e2;
+    }
 .nav a:hover {
     color: #3550A1;
     letter-spacing: 1.05px;
@@ -48,28 +53,56 @@ a {
     width: 600px;
     margin: 100px auto 0 auto;
     scroll-behavior: smooth;
-
-
 }
+#records {
+    border: 1px solid #000;
+    background-color: rgba(255,255,255,.2);
+}
+
+.lp2_background {
+    background-color: #eeeeee;
+    height: 800px;
+    background-color: rgba(255,255,255,.9);
+ background-blend-mode: lighten;    
+}
+
 .atsaay_background {
     margin-top: 50px;
-    background-color: #212121!important;
-    height: 830px;
-    padding-top: 5%;
-    border-radius: 12px;
 }
 h1.news1 {
     font-family:Arial, Helvetica, sans-serif/*'Grotesk', Helvetica, sans-serif*/;
     text-align: center;
-    transform: scalex(.93);
-    color: rgba(228, 228, 228, .9);
-    margin: -30px auto 20px auto;    
+    color: rgba(40, 40, 40, .9);
+    margin: 0 auto 20px auto;    
+    font-size: 3rem;
+    padding-top: 1px;
 }
+.news-subtitle {
+    font-size: 1.5rem;
+    z-index: 100000;
+    margin: 0 auto;
+    margin-top: -335px;
+    margin-left: 170px;
+}
+.sth_store {
+    color: rgba(40, 40, 40, .9);
+    font-size: 2.5rem;
+    width: auto;
+    
+    
+        
+}
+.sth_store:hover {
+    color: #3550A1;
+    font-size: 2.54rem;
+    transition: ease-in-out .1s;
+}
+
 span.news1 {
     margin-top: 10px!important;
 }
 .title {
-    color: rgba(228, 228, 228, .9);
+    color: rgba(40, 40, 40);
     text-align: center;
     width: 100%;
     font-size: 1.65em;
@@ -79,10 +112,7 @@ span.news1 {
 .atsaay {
     font-size: 36px;
     letter-spacing: -2px;
-    color: white;
-}
-#outnow SPAN{
-    margin-bottom: 20px!important;
+    color: rgba(40, 40, 40);
 }
 h3.labels {
     font-size: 24px;
@@ -90,19 +120,17 @@ h3.labels {
     text-align: center;
     margin: 12px auto;
     margin-top: -330px;
-    color: white!important;
+    color: rgba(40, 40, 40, .9);
 }
 .engineerrecords,
 .sthrecords {
-    color: white!important;
+    color: rgba(40, 40, 40, .9);
 }
 
 .labels a:hover{
     color: #C72B22!important;
 }
-.sleave {
-    margin-top: 200px!important;
-}
+
 .hero {
     margin: 0 auto;
     background: url('./charlie_canal.jpg');
@@ -110,15 +138,17 @@ h3.labels {
 }
 
 .sleave {
+    position: fixed;
+    float: left;
+    margin-top: -70px;
     font-family: arial;
-    margin: -30px 0 auto;
     font-size:100px;
     text-align: center;
     color: white;
-    width: 100%;
-    object-fit: contain;
-    object-position: 50%;
     opacity: .9;
+    width: 200px !important;
+    padding: 8px;
+    border: 5px solid white;
 }
 
 .heropic {
@@ -161,6 +191,9 @@ max-width: 100%;
 .atsaay_hero img{
     margin: 0 auto!important;
     max-width: 600px;
+}
+.cleanvid {
+    margin-top: 50px;
 }
 
 #linktree {
@@ -243,8 +276,6 @@ button:active {
 }
 .deezer_btn {
     color: #f5f5f5;
-    margin-top: -14px;
-    
 }
 .deezer_btn:hover {
     background:linear-gradient(45deg, #ff0000, #ffed00, #ff0092, #c2ff00, #00c7f2, #c1f1fc);
@@ -256,31 +287,6 @@ button:active {
 letter-spacing: 1.3px;
 }
 
-#bardown {
-    margin-top: 24px;
-}
-#dont_expect_anything iframe {
-    width: 100%!important;
-    margin: 50px auto;
-}
-
-.grid {
-    display: none;
-    grid-template-columns: 1fr 1fr;
-    margin-left: -120px; 
-    position: relative;
-    text-align: center;
-}
-.box {
-    width: auto;
-    padding: 10px;
-    border: 2px solid white;
-    height: fit-content;
-}
-.box1 {
-    display: none;
-}
-
 .fa-music {
     position:absolute;
     font-size: 4rem;
@@ -288,25 +294,32 @@ letter-spacing: 1.3px;
     text-align: center;
     top: 20%;
     left: 25%;
-    
-    
 }
-.cover {
-    max-width: 400px;
-    max-height: 400px;
-}
-.shirt img {
-    width: 100%;
-    margin: 100px auto;
-}
-.box4 {
-    margin-left: 50%;
-}
-.review iframe {
-    width: 100%;
-    height: 500px;
-}
+.fest_flyer {
+    display:block;
+    max-width: 600px;
+    margin-top: -300px;
+    top: 300px;
 
+}
+.press_title {
+    margin: 0 auto 18px 210px;
+}
+.review_list {
+    background: #eee;
+    padding: 20px;
+    font-family: Helvetica,Arial, sans-serif;
+    font-weight: 600;
+    list-style: none;
+}
+.review_list:hover {
+    background-color: #e7e7e7;
+    transition: ease-in-out .15s;
+}
+.review_list a:hover {
+    color: #0091ea;
+    transition: ease-in-out .15s;
+}
 footer  {
     position: fixed;
     bottom: 5px;
